@@ -1,0 +1,52 @@
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  color: #2e2f42;
+}
+
+.main-nav {
+}
+.main-nav-list {
+  display: flex;
+  margin-left: 76px;
+  margin-right: 340px;
+  gap: 40px;
+}
+.main-nav-item {
+}
+.main-nav-link {
+  display: block;
+  padding: 24px 0;
+  font-weight: 500;
+}
+
+.main-nav-link:hover,
+.main-nav-link:focus {
+  color: #404bbf;
+}
+
+.contacts {
+}
+.contacts-list {
+  display: flex;
+  gap: 40px;
+}
+.contacts-item {
+}
+.contacts-link {
+  display: block;
+  padding: 24px 0;
+  color: #434455;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: #404bbf;
+}

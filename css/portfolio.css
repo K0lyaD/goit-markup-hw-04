@@ -1,0 +1,32 @@
+.portfolio {
+}
+.portfolio-title {
+  margin-bottom: 72px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-card-item {
+  max-width: calc((100% - 24px * 2) / 3);
+}
+
+.portfolio-card-pic {
+}
+
+.portfolio-down-side {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.portfolio-card-title {
+  margin-bottom: 8px;
+}
+
+.portfolio-card-category {
+  color: #434455;
+}
