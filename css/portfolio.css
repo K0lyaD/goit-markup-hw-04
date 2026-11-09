@@ -1,5 +1,6 @@
 .portfolio {
 }
+
 .portfolio-title {
   margin-bottom: 72px;
 }
@@ -11,7 +12,18 @@
 }
 
 .portfolio-card-item {
+  position: relative;
+  overflow: hidden;
   max-width: calc((100% - 24px * 2) / 3);
+  transition: box-shadow 300ms ease-in-out;
+}
+
+.portfolio-card-item:hover,
+.portfolio-card-item:focus {
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-card-pic {
@@ -29,4 +41,22 @@
 
 .portfolio-card-category {
   color: #434455;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  transform: translateY(150%);
+  display: flex;
+  align-items: flex-end;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  transition: transform 250ms ease-in-out;
+}
+
+.portfolio-card-item:hover .overlay {
+  transform: translateY(0);
 }
