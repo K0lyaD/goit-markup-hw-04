@@ -12,10 +12,13 @@
 }
 
 .portfolio-card-item {
-  position: relative;
-  overflow: hidden;
   max-width: calc((100% - 24px * 2) / 3);
   transition: box-shadow 300ms ease-in-out;
+}
+
+.portfolio-image-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 
 .portfolio-card-item:hover,
@@ -27,6 +30,9 @@
 }
 
 .portfolio-card-pic {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .portfolio-down-side {
@@ -48,13 +54,14 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 300px;
-  transform: translateY(150%);
-  display: flex;
-  align-items: flex-end;
+  height: 100%;
+  box-sizing: border-box;
   padding: 40px 32px;
   background-color: #4d5ae5;
-  transition: transform 250ms ease-in-out;
+  color: #f4f4fd;
+
+  transform: translateY(100%);
+  transition: transform 300ms ease-in-out;
 }
 
 .portfolio-card-item:hover .overlay {
