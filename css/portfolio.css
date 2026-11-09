@@ -13,7 +13,7 @@
 
 .portfolio-card-item {
   max-width: calc((100% - 24px * 2) / 3);
-  transition: box-shadow 300ms ease-in-out;
+  transition: box-shadow 250ms ease-in-out;
 }
 
 .portfolio-image-wrapper {
@@ -61,7 +61,7 @@
   color: #f4f4fd;
 
   transform: translateY(100%);
-  transition: transform 300ms ease-in-out;
+  transition: transform 250ms ease-in-out;
 }
 
 .portfolio-card-item:hover .overlay {
